@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit List</title>
+  </head>
+
+  <body>
+    <h1>Edit Fruit</h1>
+    <form action="/fruits/<%=fruit._id%>?_method=PUT" method="POST">
+      <!--  NOTE: the form is pre-populated with values for the server-->
+      Name: <input type="text" name="name" value="<%=fruit.name%>" /><br />
+      Color: <input type="text" name="color" value="<%=fruit.color%>" /><br />
+      Ready To Eat: <input type="checkbox" name="readyToEat" <% if(fruit.readyToEat
+      === true){ %> checked <% } %> />
+      <br />
+      <input type="submit" value="Submit Changes" />
+    </form>
+  </body>
+</html>
