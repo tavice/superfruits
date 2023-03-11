@@ -1,6 +1,9 @@
 {
   "name": "superfruits",
   "version": "1.0.0",
+  "engines": {
+    "node": "18.12.1"
+  },
   "description": "A deployed app!",
   "main": "server.js",
   "scripts": {
@@ -8,7 +11,7 @@
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "Sir Paul Chapman",
+  "author": " Thomas Av",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3",
